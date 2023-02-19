@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Chemistry Corner Joke of the Day</title>
+	
+	<!--link for style sheet-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	<!--centering the images for this page only-->
+	<style>
+				img {
+ 			 display: block;
+ 			 margin-left: auto;
+  			margin-right: auto;
+			}
+	</style>
+</head>
+
+<body>
+	<!--this is the logo and home link-->
+	<a href="home.html"><img src = "images/logo1.jpg"></a>
+	<a href="index.html">Home</a>
+  		
+	
+	<!--this is the top banner...logo and navigation for mobile-->
+	<div class="navmobile">
+  		<div class="dropdown">
+    		<button class="dropbtn">MENU 
+      			<i class="fa fa-caret-down"></i>
+    		</button>
+    		<div class="dropdown-content">
+      			<a class="active" href="index.html">Home</a>
+				<a href="placeholder.html">Ask a Teacher</a>
+ 				<a href="placeholder.html">Video Tutorials</a>
+				<a href="placeholder.html">Labs</a>
+    		</div>
+  		</div> 
+		<img src="images/logo1.jpg">
+	</div>
+	
+	<!--<prompt instructions-->
+	<p>What content are you struggling with? Enter the number in the prompt. Refresh the page to get another joke</p>
+	<ol>
+  		<li>ions</li>
+  		<li>periodic table</li>
+  		<li>gas laws</li>
+		<li>acids and bases</li>
+		<li>scientific method</li>
+	</ol>  
+	
+	<!--javascript for user prompt to get joke-->
+		<script type = "text/javascript">
+		var var1;
+		var var2;
+		var var3;
+		var days;
+		var daily_joke;
+		daily_joke = Number(prompt("What content are you struggling with? Enter the number in the prompt.  1- ions, 2- periodic table, 3- gas laws, 4- acids and bases, 5- scientific method"));
+		
+		<!--value assigned to var1 to get topic -->
+		if (daily_joke == 1)
+	{ 
+		var1="ions";
+	}
+		else if (daily_joke == 2)
+	{ 
+		var1="periodic table";
+	}
+		else if (daily_joke == 3)
+	{ 
+		var1="gas laws";
+	}
+		else if (daily_joke == 4)
+	{ 
+		var1="acids and bases";
+	}
+		else if (daily_joke == 5)
+	{ 
+		var1="scientific method";
+	}
+		else{
+			var1="stoic";
+		}
+		var2 = "unit";
+		var3 = var1 + " " + var2;
+		days = daily_joke + 1; 
+		
+			<!--joke, favorite topic and days to learn displayed according to user input -->
+			if (daily_joke =="1")
+			{
+			document.write("<br><h3> Your favorite topic in chemistry will be the " + var3 + " in " + days + " days</h3>");
+			document.write("<br><img src = 'images/ions.jpg' width='25%'>")
+			}
+		else if (daily_joke =="2")
+			{
+								document.write("<br><h3> Your favorite topic in chemistry will be the " + var3 + " in " + days + " days</h3>");
+			document.write("<br><img src = 'images/periodic.jpg' width='25%'>")
+			}
+		else if (daily_joke =="3")
+			{
+								document.write("<br><h3> Your favorite topic in chemistry will be the " + var3 + " in " + days + " days</h3>");
+			document.write("<br><img src = 'images/helium.jpg' width='25%'>")
+			}
+		else if (daily_joke =="4")
+			{
+								document.write("<br><h3> Your favorite topic in chemistry will be the " + var3 + " in " + days + " days</h3>");
+			document.write("<br><img src = 'images/base.png' width='25%'>")
+			}
+		else if (daily_joke =="5")
+			{
+								document.write("<br><h3> Your favorite topic in chemistry will be the " + var3 + " in " + days + " days</h3>");
+			document.write("<br><img src = 'images/peer review.jpg' width='25%'>")
+			}
+				else {
+			document.write("<p>Humor activates the brain’s dopamine reward system, stimulating goal-oriented motivation and long-term memory, which means that humor can improve retention. Pick a number to get the joke of the day</p>")
+		}
+		
+	</script>
+</body>
+</html>
